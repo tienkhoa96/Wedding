@@ -19,7 +19,7 @@ const Banner = () => {
     const classes = useStyles();
 
     return <div className={classes.banner} >
-        <img src="http://demo104.network.woww.co.za/wp-content/uploads/sites/120/2015/05/set1-love-1500x630.jpg" alt=""/>
+        <img src="https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Capture.PNG?raw=true" alt=""/>
     </div>
 }
 
