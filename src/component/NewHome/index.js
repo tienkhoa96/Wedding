@@ -106,7 +106,7 @@ const NewHome = () => {
         },
         {
             img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/new/tuoi-binh-ty-1996-hop-voi-tuoi-nao.jpg?raw=true',
-            title: "Top 6 ứng dụng thiết kế thiệp cưới năm 2021",
+            title: "Top 6 ứng dụng thiết kế thiệp cưới 2021",
             link: "/new-detail/ki-truoc-online-bung-no-uu-dai",
             subtitle: 'Thiệp cưới từ lâu đã trở thành vật không thể thiếu trong mỗi đám cưới. Bởi tấm thiệp cưới là...',
             
