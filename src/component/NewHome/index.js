@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         justifyContent: "space-around",
         "@media (min-width: 1280px)": {
-            width: "70%",
+            width: "90%",
             margin: "0 auto"
         },
         marginBottom: "50px",
@@ -64,14 +64,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "start"
     },
     cardTitle: {
-        fontSize:"14px",
+        fontSize:"16px",
         fontWeight:"600",
         marginBottom:".75rem",
         marginTop: "0"
     },
     cardText: {
         marginBottom:"20px",
-        fontSize:"12px"
+        fontSize:"14px"
     },
     btnPrimary: {
         background:"#ffffff",

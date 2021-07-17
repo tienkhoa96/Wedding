@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-around",
         marginBottom: "50px",
         "@media (min-width: 1280px)": {
-            width: "70%",
+            width: "80%",
             margin: "0 auto"
         },
         padding: "0 50px"
