@@ -83,6 +83,27 @@ const useStyles = makeStyles((theme) => ({
         transform:"translateX(-50%)",
         zIndex:"1000",
         whiteSpace:"nowrap",
+    },
+    btnMore: {
+        padding: "10px 40px",
+        border: "1px solid #000000",
+        borderRadius: "25px",
+        background: "#ffffff",
+        display: "inline-block",
+        fontWeight: 700,
+        transition: "0.3s",
+        marginTop: "20px",
+        opacity: 0.4,
+        "&:hover a": {
+            color: "#ffffff",
+            opacity: "1",   
+        },
+        "&:hover": {
+            color: "#000000d6",
+            opacity: 1,
+            background: "#f6cacad4",
+            border: "1px solid #f6cacad4"
+        }
     }
 
   }));
@@ -147,6 +168,7 @@ const AlbumHome = () => {
                             })
                         }
                     </Grid>
+                    <Link to="/album"><div className={classes.btnMore}>Xem thêm</div></Link>
                 </div>
             </div>)
 }
