@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         "@media (min-width: 1280px)": {
             width: "80%",
-        }
+        },
+        padding: "20px"
     },
     wrapBox: {
         display: "flex",
