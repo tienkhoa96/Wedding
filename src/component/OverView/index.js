@@ -7,9 +7,10 @@ import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
-    // comment: {
-    //     paddingTop: "50px"
-    // },
+    comment: {
+        paddingTop: "30px",
+        background: "#f4f0ea"
+    },
     section: {
         fontSize:"24px",
         textTransform:"uppercase",
@@ -55,12 +56,12 @@ const OverView = () => {
     const classes = useStyles();
 
     const OverView = [
-        {
-            img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/over-view/gt-1.png?raw=true',
-            link: '/gioi-thieu',
-            title: "Giới thiệu"
+        // {
+        //     img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/over-view/gt-1.png?raw=true',
+        //     link: '/gioi-thieu',
+        //     title: "Giới thiệu"
             
-        },
+        // },
         {
             img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/over-view/gt-4.png?raw=true',
             link: '/album',
@@ -86,7 +87,7 @@ const OverView = () => {
                     {
                         OverView.length && OverView.map((item, index) => {
                                 return (
-                                    <Grid item xs={6} sm={4} md={3} className={classes.boxHeadItem}>
+                                    <Grid item xs={6} sm={4} md={4} className={classes.boxHeadItem}>
                                         <Link to={`${item.link? item.link : ''}`}>
                                             <div className={clsx(classes.boxHeadItemImg, 'change')}>
                                                 <img src={item.img} alt=""/>

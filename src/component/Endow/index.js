@@ -5,7 +5,10 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     item: {
-        paddingTop: "50px"
+        paddingTop: "50px",
+        background: "#f4f0ea",
+        paddingBottom: "50px"
+
     },
     section: {
         fontSize:"24px",

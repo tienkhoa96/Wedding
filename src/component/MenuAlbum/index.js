@@ -5,6 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import Grid from '@material-ui/core/Grid';
+import clsx from  'clsx';
 // import { saveToLocal } from '../../utils';
 // import { useHistory } from "react-router-dom"
 
@@ -29,10 +30,13 @@ const useStyles = makeStyles((theme) => ({
         width: "24%",
         padding: "5px",
         // marginBottom: "20px"
-    },
-    boxImg: {
-        "& > img": {
-            width: '100%'
+        "&:hover": {
+            "& .display":{
+                top: "-5px",
+            },
+            "& .change": {
+                color: "#f26a19"
+            }
         }
     },
     boxTitle: {
@@ -44,7 +48,37 @@ const useStyles = makeStyles((theme) => ({
         textOverflow:"ellipsis",
         WebkitLineClamp:"1",
         display:"-webkit-box",
-        WebkitBoxOrient:"vertical"
+        WebkitBoxOient:"vertical"
+    },
+    boxImg: {
+        position: "relative",
+        height: "auto",
+        overflow: "hidden",
+        // paddingTop: "100%",
+        // backgroundPosition: "50% 50%",
+        backgroundSize: "cover",
+        "& > img": {
+            width: '100%'
+        },
+    },
+    hoverImg: {
+        width: "100%",
+        height: "100%",
+        outline: "1px solid #fff",
+        outlineOffset: "-10px",
+        // display: "none",
+        position: "absolute",
+        top: "-100%",
+        left: "0px",
+        textAlign: "center",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "#e0702e",
+        background: "rgb(170 170 170 / 55%)",
+        fontSize: "32px",
+        transition: "all 1s ease-in-out"
+
     }
   }));
 
@@ -71,8 +105,9 @@ const MenuAlbum = ({dataList}) => {
                                         <Link to={`/album-detail/${item.id}`}>
                                             <div className={classes.boxImg}>
                                                 <img src={item.img}/>
+                                                <div className={clsx(classes.hoverImg, "display")}>Xem thêm</div>
                                             </div>
-                                            <div className={classes.boxTitle}>{item.title}</div>
+                                            <div className={clsx(classes.boxTitle, "change")}>{item.title}</div>
                                         </Link>
                                         {/* </div> */}
                                     </Grid>

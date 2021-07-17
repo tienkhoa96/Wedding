@@ -66,7 +66,9 @@ const useStyles = makeStyles((theme) => ({
         transform:"scale(0.90)",
         transition:"all 0.4s ease-in-out",
         "&:hover ": {
+            // "& > img": {
             transform:"scale(0.95)"
+            // }
         }
     },
     boxImg: {
@@ -132,9 +134,9 @@ const Dress = () => {
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/V%C3%A1y%20c%C6%B0%E1%BB%9Bi/V%C3%A1y%20c%C6%B0%E1%BB%9Bi%20tr%E1%BB%85%20vai%202/01.jpg?raw=true",
-            title: 'Váy cưới trễ vai',
+            title: 'Váy cưới trễ lưng',
             link: '/dress-detail',
-            id: "vay-cuoi-tre-vai2"
+            id: "vay-cuoi-tre-lung"
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/V%C3%A1y%20c%C6%B0%E1%BB%9Bi/V%C3%A1y%20c%C6%B0%E1%BB%9Bi%20%C4%91u%C3%B4i%20d%C3%A0i/01.jpg?raw=true",
@@ -143,10 +145,10 @@ const Dress = () => {
             id: "vay-cuoi-duoi-dai"
         },
         {
-            img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/V%C3%A1y%20c%C6%B0%E1%BB%9Bi/V%C3%A1y%20c%C6%B0%E1%BB%9Bi%20%C4%91u%C3%B4i%20d%C3%A0i/01.jpg?raw=true",
-            title: 'Váy cưới đuôi dài',
+            img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/V%C3%A1y%20c%C6%B0%E1%BB%9Bi/V%C3%A1y%20c%C6%B0%E1%BB%9Bi%20%C4%91u%C3%B4i%20d%C3%A0i/02.jpg?raw=true",
+            title: 'Váy cưới đuôi cá',
             link: '/dress-detail',
-            id: "vay-cuoi-duoi-dai2"
+            id: "vay-cuoi-duoi-ca"
         },
     ]
 

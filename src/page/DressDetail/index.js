@@ -85,8 +85,8 @@ const DressDetail = () => {
     ]
     },
     {
-      cat: "vay-cuoi-tre-vai2",
-      des: "Váy cưới trễ vai",
+      cat: "vay-cuoi-tre-lung",
+      des: "Váy cưới trễ lưng",
       title: "Điểm nhấn của xu hướng váy cưới trễ vai này chính là sự lấp lửng, nửa kín nửa hở, cuốn hút người nhìn. Không chỉ vậy, phần vải trễ tay sẽ có tác dụng rất tốt trong việc che đi khuyết điểm cánh tay của người mặc, rất thích hợp cho những nàng dâu hơi đậm người một chút hoặc tay hơi to. Với xu hướng váy cưới trễ vai, cô dâu cũng đặc biệt trở nên quyến rũ bội phần nhờ sự nhấn nhá vào phần xương quai xanh, xương vai và phần ngực. Các nàng dâu sẽ trở nên vô cùng lộng lẫy với những thiết kế váy cưới trễ vai này.  ",
       dataImg: [
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/V%C3%A1y%20c%C6%B0%E1%BB%9Bi/V%C3%A1y%20c%C6%B0%E1%BB%9Bi%20tr%E1%BB%85%20vai%202/01.jpg?raw=true",
@@ -106,8 +106,8 @@ const DressDetail = () => {
     ]
     },
     {
-      cat: "vay-cuoi-duoi-dai2",
-      des: "Váy cưới đuôi dài",
+      cat: "vay-cuoi-duoi-ca",
+      des: "Váy cưới đuôi cá",
       title: "Mang màu sắc truyền thống với những chất liệu buông rủ mềm mại, những mẫu váy cưới trắng đuôi dài chưa bao giờ hết hot và vẫn là sự lựa chọn của rất nhiều nàng dâu trong ngày cưới.  ",
       dataImg: [
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/V%C3%A1y%20c%C6%B0%E1%BB%9Bi/V%C3%A1y%20c%C6%B0%E1%BB%9Bi%20%C4%91u%C3%B4i%20d%C3%A0i/01.jpg?raw=true",
@@ -122,7 +122,7 @@ const DressDetail = () => {
     <>
       <Header />
         {DressDetail.length && DressDetail.map((item, index) => {
-            if (item.cat == myId) {
+            if (item.cat === myId) {
               return (
                   <>
                     <h1 className={classes.des}> {item.des}</h1>

@@ -88,7 +88,7 @@ const useStyles = makeStyles((theme) => ({
 const Menu = ({dataList, isShowBar, closeBar, activeMenu}) => {
     const classes = useStyles();
     let location = useLocation();
-    console.log(`location`, location)
+    // console.log(`location`, location)
 
     const renderMenu = () => {
         return(

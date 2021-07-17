@@ -5,11 +5,17 @@ import clsx from  'clsx';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
+    item: {
+        // background: "#f4f0ea",
+        paddingBottom: "50px"
+    },
     containerAlbum: {
         paddingTop: "50px",
-        width: "90vw",
         textAlign: "center",
-        margin: "0 auto"
+        "@media (min-width: 1280px)": {
+            width: "90vw",
+            margin: "0 auto"
+        }
     },
     section: {
         fontSize:"24px",
@@ -31,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
         padding:"10px",
         position:"relative",
         overflow:"hidden",
-        width: "30%",
         "&:hover .ok": {
                 "& > img": {
                     opacity: "0.8",
@@ -86,48 +91,59 @@ const AlbumHome = () => {
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Studio/home-studio.jpg?raw=true",
             title: "Album studio",
+            link: "/album-detail/chup-anh-cuoi-studio"
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/Album/DaNang.jpg?raw=true",
             title: "Album Đà Nẵng",
+            link: "/album-detail/chup-anh-cuoi-da-nang"
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/Album/HaNoi.jpg?raw=true",
             title: "Album Hà Nội",
+            link: "/album-detail/chup-anh-cuoi-ha-noi"
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/Album/Santory.jpg?raw=true",
             title: "Album phim trường Santory",
+            link: "/album-detail/chup-anh-cuoi-phim-truong-santorini"
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/Album/Tam-%C4%91%E1%BA%A3o-8.jpg?raw=true",
             title: "Album Tam Đảo",
+            link: "/album-detail/chup-anh-cuoi-tam-dao"
         },
         {
             img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/Album/cherry-studio-alibaba-1-23.jpg?raw=true",
             title: "Album phim trường Alibaba",
+            link: "/album-detail/chup-anh-cuoi-phim-truong-alibaba"
         },
         
     ]
-    return (<div className={classes.containerAlbum}>
-                <div className={classes.section}>Album ảnh cưới</div>
-                <Grid container spacing={3} className={classes.wrapBox}>
+    return (<div className={classes.item}>
+                <div className={classes.containerAlbum}>
+                    <div className={classes.section}>Album ảnh cưới</div>
+                    <Grid container spacing={3} className={classes.wrapBox}>
                         {
                             AlbumHome.length && AlbumHome.map((item, index) => {
-                                    return ( <>
-                                    
+                                return ( <>
                                     <Grid item xs={12} sm={6} md={4} className={classes.boxItem}>
+                                <Link to={item.link}>
+
                                             <div className={clsx(classes.boxImg, 'ok')}> 
                                                 <img src={item.img} alt=""/>
                                             </div>
                                             <div className={clsx(classes.boxTitle, 'change')}> 
                                                 {item.title}
                                             </div>
+                                    </Link>
+
                                         </Grid>
-                                    </>)
-                                })
-                            }
-                </Grid>
+                                </>)
+                            })
+                        }
+                    </Grid>
+                </div>
             </div>)
 }
 

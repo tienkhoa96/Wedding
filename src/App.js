@@ -12,11 +12,12 @@ import CenteredGrid from './page/New';
 import AlbumDetail from './page/AlbumDetail';
 import DressDetail from './page/DressDetail';
 import NewDetail from './page/NewDetail';
-
+import ScrollToTop from './component/ScrollToTop'
 function App() {
 
   return (
     <Router>
+      <ScrollToTop/>
         <Switch>
           <Route exact path="/">
             <Home />

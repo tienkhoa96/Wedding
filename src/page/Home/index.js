@@ -22,7 +22,7 @@ const Home = () => {
             {/* <BestSler data={dataLayduojc} */}
             <Banner />
             <OverView />
-            <AlbumHome />
+            <AlbumHome/>
             <Endow/>
             <Comment />
             <NewHome />

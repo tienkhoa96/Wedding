@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         "@media (max-width : 768px)": {
             display: 'none',
         },
-        paddingBottom: "30px"
+        // paddingBottom: "30px"
     }
   }));
 
@@ -19,7 +19,7 @@ const Banner = () => {
     const classes = useStyles();
 
     return <div className={classes.banner} >
-        <img src="https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Capture.PNG?raw=true" alt=""/>
+        <img src="https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/banner.jpg?raw=true" alt=""/>
     </div>
 }
 

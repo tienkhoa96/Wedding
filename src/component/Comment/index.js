@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
     item: {
-        paddingTop: "50px"
+        paddingTop: "50px",
+        paddingBottom: "50px"
     },
     section: {
         fontSize:"24px",

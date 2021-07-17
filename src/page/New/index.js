@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Header from '../../component/common/Header'
 import Footer from '../../component/common/Footer'
+import clsx from  'clsx';
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -28,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
     maxWidth: "100%",
     padding: "10px 20px",
+    "&:hover  .changeTitle": {
+      color: "#f26a19"
+    }
   },
   flexItem:{
     "@media (min-width: 768px)": {
@@ -51,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
     // maxWidth: "100%",
     paddingBottom: "20px",
     // boder: "1px solid gray"
+    "&:hover  .changeSubTitle": {
+      color: "#f26a19"
+    }
   },
   flexSubItem:{
     display: "flex",
@@ -117,28 +124,28 @@ export default function New() {
   const SubItem = [
     {
       id: "/ki-truoc-online-bung-no-uu-dai",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/bavi.jpg?raw=true",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/bungnouudai.jpg?raw=true",
       des: "Kí trước online - Bùng nổ ưu đãi",
     },
     {
-      id: "/ki-truoc-online-bung-no-uu-dai",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/bavi.jpg?raw=true",
-      des: "Kí trước online - Bùng nổ ưu đãi",
+      id: "/ngay-tot-to-chuc-dam-cuoi",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/ngay-tot-to-chuc-dam-cuoi.jpg?raw=true",
+      des: "Ngày tốt tổ chức cưới hỏi",
     },
     {
-      id: "/ki-truoc-online-bung-no-uu-dai",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/bavi.jpg?raw=true",
-      des: "Kí trước online - Bùng nổ ưu đãi",
+      id: "/thiet-ke-thiep-cuoi",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiet-ke-thiep-cuoi.jpg?raw=true",
+      des: "Thiết kế thiệp cưới",
     },
     {
-      id: "/ki-truoc-online-bung-no-uu-dai",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/bavi.jpg?raw=true",
-      des: "Kí trước online - Bùng nổ ưu đãi",
+      id: "/uu-dai-mua-cuoi",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/4-2-1.jpg?raw=true",
+      des: "Ưu đãi tưng bừng mùa cưới",
     },
     {
-      id: "/ki-truoc-online-bung-no-uu-dai",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/bavi.jpg?raw=true",
-      des: "Kí trước online - Bùng nổ ưu đãi",
+      id: "/chup-hinh-cuoi-chuan-bi-gi",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/chup-hinh-cuoi-chuan-bi-gi.jpg?raw=true",
+      des: "Chụp hình cưới cần chuẩn bị gì",
     },
   ]
 
@@ -154,7 +161,7 @@ export default function New() {
                           <div className={classes.boxImg}>
                             <img src={item.img}/>
                           </div>
-                          <div className={classes.boxTitle}>
+                          <div className={clsx(classes.boxTitle, "changeTitle")}>
                             <div className={classes.titleInner}>
                               <div className={classes.des}>{item.des}</div>
                               <div className={classes.title}>{item.title}</div>
@@ -181,7 +188,7 @@ export default function New() {
                           <div className={classes.boxSubImg}>
                             <img src={item.img}/>
                           </div>
-                          <div className={classes.boxSubTitle}>
+                          <div className={clsx(classes.boxSubTitle, "changeSubTitle")}>
                             <div className={classes.subTitleInner}>
                               <div className={classes.des}>{item.des}</div>
                             </div>  
