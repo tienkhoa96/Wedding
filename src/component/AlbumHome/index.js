@@ -30,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
         "@media (min-width: 1280px)": {
             width: "70%",
             margin: "0 auto"
+        },
+        "@media (max-width: 600px)": {
+            width: "95%",
+            margin: "0 auto"
         }
     },
     boxItem: {
