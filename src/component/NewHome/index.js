@@ -37,9 +37,9 @@ const useStyles = makeStyles((theme) => ({
             cursor: "pointer"
         },
         "&:hover .changeBtn": {
-            background:"#f6caca",
-            color:"#ffffff",
-            border:"1px solid #f6caca"
+            background:"#ffa4a4",
+            color:"#2b2b2b",
+            border:"1px solid #ffa4a4"
         }
     },
     card: {

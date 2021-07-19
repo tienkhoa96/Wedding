@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "space-around",
         marginBottom: "50px",
         "@media (min-width: 1280px)": {
-            width: "80%",
+            width: "70%",
             margin: "0 auto"
         },
         padding: "0 50px"
@@ -45,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: "600",
     },
     commentSubTitle: {
-        
-    textAlign: "justify"
+        textAlign: "justify",
+        lineHeight: "22px",
     }
     
   }));
@@ -83,7 +83,7 @@ const Comment = () => {
     ]
     return <div className={classes.item}>
             <div className={classes.section}>TRẢI NGHIỆM KHÁCH HÀNG</div>
-            <Grid container spacing={3} className={classes.wrapComment}>
+            <Grid container className={classes.wrapComment}>
                 {
                     Comment.length && Comment.map((item, index) => {
                             return (

@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: "50px"
     },
     containerAlbum: {
-        paddingTop: "50px",
+        paddingTop: "60px",
         textAlign: "center",
         "@media (min-width: 1280px)": {
             width: "90vw",
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize:"24px",
         textTransform:"uppercase",
         textAlign:"center",
-        marginBottom:"30px",
+        marginBottom:"10px",
     },
     wrapBox: {
         display: "flex",
@@ -56,13 +56,13 @@ const useStyles = makeStyles((theme) => ({
 
     },
     boxImg: {
-        borderRadius:"25px",
+        borderRadius:"12px",
         overflow:"hidden",
         "& > img": {
-            borderRadius:"25px",
+            borderRadius:"12px",
             width: "100%",
             transform: "scale(1)",
-            transition: "all 2s ease-in-out",
+            transition: "all 1.3s ease-in-out",
         },
         // "&:hover > img": {
         //     opacity: "0.8",
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     },
     btnMore: {
         padding: "10px 40px",
-        border: "1px solid #000000",
+        border: "1px solid #9b9b9b",
         borderRadius: "25px",
         background: "#ffffff",
         display: "inline-block",
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
             opacity: "1",   
         },
         "&:hover": {
-            color: "#000000d6",
+            color: "#ffffff",
             opacity: 1,
             background: "#f6cacad4",
             border: "1px solid #f6cacad4"

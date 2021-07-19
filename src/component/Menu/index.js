@@ -18,13 +18,12 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
         "& > a > li":{
-            paddingLeft:"20px",
-            marginLeft:"20px",
-            fontFamily:"\"Merriweather\",serif !important",
-            letterSpacing:"0.5px",
-            fontSize:"18px",
+            paddingLeft:"15px",
+            marginLeft:"15px",
+            fontFamily:"'Open Sans',arial,sans-serif !important",
+            fontSize:"16px",
             fontWeight:"600",
-            borderLeft:"2px solid #000000",
+            borderLeft:"2px solid #6a6a6a",
             // '&:first-child': {
             //     borderLeft: 'none'
             // }
@@ -88,7 +87,6 @@ const useStyles = makeStyles((theme) => ({
 const Menu = ({dataList, isShowBar, closeBar, activeMenu}) => {
     const classes = useStyles();
     let location = useLocation();
-    // console.log(`location`, location)
 
     const renderMenu = () => {
         return(

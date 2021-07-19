@@ -19,10 +19,11 @@ const useStyles = makeStyles((theme) => ({
         margin: "20px 0"
     },
     section: {
-        paddingTop: "30px",
-        fontSize:"24px",
-        textTransform:"uppercase",
-        textAlign:"center",
+        padding:"20px 0",
+        fontSize: "24px",
+        textTransform: "uppercase",
+        textAlign: "center",
+        fontWeight: "bold",
         marginBottom:"30px",
         "@media (min-width: 1280px)": {
             width: "70%",
@@ -62,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
         // width: "24%",
         // padding: "5px",
         padding:"0 ",
-        boxShadow:"5px 5px 5px #888, -5px -5px 5px #efefef",
+        boxShadow:" 0 0 20px 0px rgb(0 0 0 / 10%)",
         transform:"scale(0.90)",
         transition:"all 0.4s ease-in-out",
         "&:hover ": {
@@ -157,7 +158,6 @@ const Dress = () => {
             <Header/>
             <div className={classes.content}>
                 <div className={classes.section}>Váy cưới Luxury </div>
-                <div className={classes.title}>VÁY CƯỚI LUXURY là dòng váy cưới cao cấp của Tony Bridal nhằm mang đến những váy cưới thiết kế đẹp hơn dựa trên nền chất liệu nhập ngoại nhưng vẫn theo phong cách tối giản chủ đạo tinh tế và thanh lịch. Những mẫu váy cưới của Tony Bridal bằng các chất liệu phi co giãn 4 chiều, ren nhập ngoại cùng với các chất liệu hỗ trợ nhằm thêm sự nhẹ nhàng và thoải mái cho cô dâu. Bên cạnh đó, dòng váy cưới dáng sẽ được điểm tô đặc sắc hơn với cườm Nhật, pha lê lấp lánh… Tony Bridal vẫn luôn mong muốn mang đến những trải nghiệm hài lòng về dịch vụ may áo cưới từ sự tận tâm vànhiệt tình của cả đội ngũ từ thiết kế, chuyên viên tư vấn đến thợ cắt ráp.</div>
                 <div className={classes.contentItem}>
                 <Grid containe className={classes.wrapItem}>
                         {

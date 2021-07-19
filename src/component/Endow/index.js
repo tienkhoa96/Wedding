@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
         borderLeft:"navajowhite",
         borderRadius:"15px",
         margin:"15px 0",
-        paddingLeft:"15px",
+        padding:"0px 15px 0 25px",
     },
     desTitle: {
         fontSize: "18px",
@@ -67,7 +67,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize:"16px",
         textAlign:"justify",
         marginBottom:"15px",
-        paddingRight:"10px"
+        paddingRight:"10px",
+        lineHeight: "22px",
     },
     center: {
         display: "flex",

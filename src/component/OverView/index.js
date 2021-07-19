@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     comment: {
-        paddingTop: "30px",
+        padding: "25px 0",
         background: "#f4f0ea"
     },
     section: {
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign:"center",
         marginBottom:"30px",
         fontWeight: "500",
-        marginTop: "30px"
+        marginTop: "25px"
     },
     boxHead: {
         display: "flex",
@@ -43,11 +43,10 @@ const useStyles = makeStyles((theme) => ({
             width: "150px"
         }
     },
-    // boxHeadItemTitle: {
-    //     "&:hover": {
-    //         color: "#f26a19"
-    //     }
-    // }
+    boxHeadItemTitle: {
+        fontSize: "16px",
+        fontWeight: "bold"
+    }
     
   }));
 

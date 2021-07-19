@@ -29,20 +29,26 @@ const useStyles = makeStyles((theme) => ({
     boxItem: {
         width: "24%",
         padding: "5px",
+        overflow: "hidden",
         // marginBottom: "20px"
         "&:hover": {
-            "& .display":{
-                top: "-5px",
-            },
             "& .change": {
                 color: "#f26a19"
+            }, 
+        },
+        "&:hover .opacity": {
+            "& > img": {
+                transform: "scale(1.3)",
+                opacity: "0.6",
+                transition: "all 2s ease-in-out",
+
             }
         }
     },
     boxTitle: {
         fontSize:"18px",
         margin:"0",
-        paddingTop:"15px",
+        paddingTop:"5px",
         fontWeight:"100",
         overflow:"hidden",
         textOverflow:"ellipsis",
@@ -52,34 +58,13 @@ const useStyles = makeStyles((theme) => ({
     },
     boxImg: {
         position: "relative",
-        height: "auto",
+        padding: "5px 0",
         overflow: "hidden",
-        // paddingTop: "100%",
-        // backgroundPosition: "50% 50%",
         backgroundSize: "cover",
         "& > img": {
-            width: '100%'
+            width: '100%',
         },
     },
-    hoverImg: {
-        width: "100%",
-        height: "100%",
-        outline: "1px solid #fff",
-        outlineOffset: "-10px",
-        // display: "none",
-        position: "absolute",
-        top: "-100%",
-        left: "0px",
-        textAlign: "center",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        color: "#e0702e",
-        background: "rgb(170 170 170 / 55%)",
-        fontSize: "32px",
-        transition: "all 1s ease-in-out"
-
-    }
   }));
 
 
@@ -103,9 +88,8 @@ const MenuAlbum = ({dataList}) => {
                                     <Grid item xs={12} sm={6} md={4} lg={3} className={classes.boxItem}>
                                         {/* <div onClick={() => handClick(item)}> */}
                                         <Link to={`/album-detail/${item.id}`}>
-                                            <div className={classes.boxImg}>
+                                            <div className={clsx(classes.boxImg, "opacity")}>
                                                 <img src={item.img}/>
-                                                <div className={clsx(classes.hoverImg, "display")}>Xem thêm</div>
                                             </div>
                                             <div className={clsx(classes.boxTitle, "change")}>{item.title}</div>
                                         </Link>

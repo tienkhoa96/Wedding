@@ -11,7 +11,7 @@ const ProductPrice = () => {
             data: [
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/Comment/39900495_2187804601294710_8118125377903132672_o-684x1024.jpg?raw=true",
-                    title: "Daisy Sliver",
+                    title: "Daisy",
                     description: "Gói phim trường Hàn Quốc ELLY",
                     price: "5,900,000",
                     content: [
@@ -208,7 +208,7 @@ const ProductPrice = () => {
             data: [
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/3.jpg?raw=true",
-                    title: "Daisy",
+                    title: "Peony",
                     description: "Ảnh phóng Hàn Quốc",
                     price: "3,900,000",
                     content: [
@@ -257,7 +257,7 @@ const ProductPrice = () => {
                 },
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/4.jpg?raw=true",
-                    title: "Daisy",
+                    title: "Peony Diamond",
                     description: "Ảnh phóng Hàn Quốc",
                     price: "3,900,000",
                     content: [
@@ -307,11 +307,11 @@ const ProductPrice = () => {
             ]
         },
         {
-            header: "Gói chụp Peony",
+            header: "Gói chụp Diamond",
             data: [
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/5.jpg?raw=true",
-                    title: "Daisy",
+                    title: "Blue Diamond",
                     description: "Ảnh phóng Hàn Quốc",
                     price: "3,900,000",
                     content: [
@@ -360,7 +360,7 @@ const ProductPrice = () => {
                 },
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/6.jpg?raw=true",
-                    title: "Daisy",
+                    title: "Red Diamond",
                     description: "Ảnh phóng Hàn Quốc",
                     price: "3,900,000",
                     content: [
@@ -410,11 +410,11 @@ const ProductPrice = () => {
             ]
         },
         {
-            header: "Gói chụp Peony",
+            header: "Gói chụp Camellia",
             data: [
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/7.jpg?raw=true",
-                    title: "Daisy",
+                    title: "Camellia",
                     description: "Ảnh phóng Hàn Quốc",
                     price: "3,900,000",
                     content: [
@@ -463,7 +463,7 @@ const ProductPrice = () => {
                 },
                 {
                     img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/8.jpg?raw=true",
-                    title: "Daisy",
+                    title: "Camellia Diamond",
                     description: "Ảnh phóng Hàn Quốc",
                     price: "3,900,000",
                     content: [

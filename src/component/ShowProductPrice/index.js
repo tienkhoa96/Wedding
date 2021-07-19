@@ -1,8 +1,5 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Link
-} from "react-router-dom";
 import PropTypes from 'prop-types';
 import clsx from  'clsx';
 import Grid from '@material-ui/core/Grid';
@@ -84,10 +81,11 @@ const useStyles = makeStyles((theme) => ({
     title: {
         fontSize:"40px",
         color:"rgb(210, 147, 101)",
-        fontFamily:"MTD",
+        fontFamily:"'Pinyon Script', cursive",
         paddingTop:"70px",
         paddingLeft:"15px",
-        paddingRight:"15px"
+        paddingRight:"15px",
+        fontWeight: "bold"
     },
     description: {
         fontSize:"18px",
@@ -137,11 +135,11 @@ const useStyles = makeStyles((theme) => ({
             listStyle: "none"
         },
         margin: "0",
-        background: "#d29365",
+        background: "rgb(242 151 144 / 82%)",
         padding: "0 15px",
         borderBottomRightRadius:"20px",
         borderBottomLeftRadius:"20px",
-        color: "rgb(255, 255, 255)"
+        color: "rgb(29 29 29)"
     }, 
     giftName: {
         padding: "10px 0"
