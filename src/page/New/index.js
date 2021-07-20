@@ -93,6 +93,11 @@ const useStyles = makeStyles((theme) => ({
   boxSubItem: {
     padding: "10px 20px"
   },
+  
+  subDes: {
+    fontWeight: "bold",
+    fontSize: "16px"
+  },
 }));
 
 export default function New() {
@@ -115,47 +120,47 @@ export default function New() {
       id: "chup-hinh-cuoi-chuan-bi-gi",
       img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Studio/chup-anh-cuoi-phong-cach-han-quoc-2.jpg?raw=true",
       des: "Chụp hình cưới cần chuẩn bị gì",
-      title: "ELLY STUDIO thông báo ưu đãi dành riêng cho khách hàng đăng kí online trước [...]"
+      title: "Thời đại của công nghệ số lên ngôi, cuộc sống càng trở nên khoa học và tiện lợi hơn [...]"
     },
     {
       id: "ngay-tot-to-chuc-dam-cuoi",
       img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/vector-con-trau-20215f69c6d645996_22ebded96e18f5171f1862107b7caf24.jpg?raw=true",
       des: "Ngày tốt tổ chức đám cưới",
-      title: "ELLY STUDIO thông báo ưu đãi dành riêng cho khách hàng đăng kí online trước [...]"
+      title: "Việc đặt lịch chụp ảnh cưới vừa không mất công di chuyển đến tận nơi [...]"
     },
     {
       id: "thiet-ke-thiep-cuoi",
       img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiepcuoi.jpg?raw=true",
       des: "Thiết kế thiếp cưới",
-      title: "ELLY STUDIO thông báo ưu đãi dành riêng cho khách hàng đăng kí online trước [...]"
+      title: "AN TOÀN – TIỆN LỢI – NHIỀU ƯU ĐÃI chính là lí do bạn nên đăng ký lịch chụp ngay hôm nay [...]"
     },
   ]
 
   const SubItem = [
     {
       id: "/ki-truoc-online-bung-no-uu-dai",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/bungnouudai.jpg?raw=true",
-      des: "Kí trước online - Bùng nổ ưu đãi",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Phim%20tr%C6%B0%E1%BB%9Dng%20Alibaba/11.jpg?raw=truehttps://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/8.jpg?raw=true",
+      des: "Thủ tục kết hôn mất bao lâu",
     },
     {
       id: "/ngay-tot-to-chuc-dam-cuoi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/vector-con-trau-20215f69c6d645996_22ebded96e18f5171f1862107b7caf24.jpg?raw=true",
-      des: "Ngày tốt tổ chức cưới hỏi",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/ProductPrice/9.jpg?raw=true",
+      des: "Đăng ký kết hôn mất bao lâu",
     },
     {
       id: "/thiet-ke-thiep-cuoi",      
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiepcuoi.jpg?raw=true",
-      des: "Thiết kế thiệp cưới",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/10.jpg?raw=true",
+      des: "Mẫu áo cưới cô dâu đẹp nhất năm 2021",
     },
     {
       id: "/uu-dai-mua-cuoi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/4-2-1.jpg?raw=true",
-      des: "Ưu đãi tưng bừng mùa cưới",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/%C4%90%C3%A0%20N%E1%BA%B5ng/08.jpg?raw=true",
+      des: "Những điều cần biết khi tổ chức tiệc cưới",
     },
     {
       id: "/chup-hinh-cuoi-chuan-bi-gi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Studio/chup-anh-cuoi-phong-cach-han-quoc-2.jpg?raw=true",
-      des: "Chụp hình cưới cần chuẩn bị gì",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/H%C3%A0%20N%E1%BB%99i/09.jpg?raw=true",
+      des: "Chương trình bốc thăm trúng thưởng",
     },
   ]
 
@@ -201,7 +206,7 @@ export default function New() {
                           </Grid>
                           <Grid item xs={8} className={clsx(classes.boxSubTitle, "changeSubTitle")}>
                             <div className={classes.subTitleInner}>
-                              <div className={classes.des}>{item.des}</div>
+                              <div className={classes.subDes}>{item.des}</div>
                             </div>  
                           </Grid>   
                         </Grid>                         

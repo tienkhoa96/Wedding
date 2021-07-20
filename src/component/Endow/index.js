@@ -14,7 +14,9 @@ const useStyles = makeStyles((theme) => ({
         fontSize:"24px",
         textTransform:"uppercase",
         textAlign:"center",
-        margin:"30px 0"
+        margin:"30px 0",
+        fontWeight: "500",
+
     },
     boxItem: {
         display: "flex",

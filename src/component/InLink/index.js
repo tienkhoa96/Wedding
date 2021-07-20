@@ -5,7 +5,10 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     item: {
-        paddingRight: "40px"
+        padding: "20px 20px",
+        "@media (min-width: 1200px)": {
+            padding: "20px 40px"
+        }
     },
     section: {
         textTransform:"uppercase",
@@ -27,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     boxItem: {
         padding: "0",
+        margin: "0",
         '& > li':{
             listStyle: "none",
         },
@@ -84,7 +88,7 @@ const InLink = () => {
         },
         
     ]
-    return <Grid item xs={12} sm={6} md={4} lg={3} className={classes.item}>
+    return <Grid item xs={12} sm={6} md={4} lg={4} className={classes.item}>
             <div className={classes.section}>Liên kết hữu ích</div>
             <ul className={classes.boxItem}>
                 {

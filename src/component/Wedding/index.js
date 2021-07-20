@@ -5,7 +5,10 @@ import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     item: {
-        padding: "50px"
+        padding: "20px 20px",
+        "@media (min-width: 1200px)": {
+            padding: "20px 40px"
+        }
     },
     section: {
         textTransform:"uppercase",
@@ -77,7 +80,7 @@ const Wedding = () => {
         },
         
     ]
-    return <Grid item xs={12} sm={6} md={4} lg={3} className={classes.item}>
+    return <Grid item xs={12} sm={6} md={4} lg={4} className={classes.item}>
             <div className={classes.section}>Elly studio</div>
             <ul className={classes.boxItem}>
                 {

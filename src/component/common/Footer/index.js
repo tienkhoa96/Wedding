@@ -38,7 +38,7 @@ const Footer = () => {
     const classes = useStyles();
     return (
         <div className={classes.wrapFooter}>
-            <Grid container spacing={5} className={classes.boxFooter}>
+            <Grid container className={classes.boxFooter}>
                 <Wedding/>
                 <InLink />
                 <FanPage />

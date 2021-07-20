@@ -22,6 +22,8 @@ const useStyles = makeStyles((theme) => ({
         textTransform:"uppercase",
         textAlign:"center",
         marginBottom:"10px",
+        fontWeight: "500",
+
     },
     wrapBox: {
         display: "flex",
@@ -34,6 +36,11 @@ const useStyles = makeStyles((theme) => ({
         "@media (max-width: 600px)": {
             width: "95%",
             margin: "0 auto"
+        },
+        "@media (min-width: 768px)": {
+            width: "95%",
+            margin: "0 auto",
+            padding: "30px 40px"
         }
     },
     boxItem: {

@@ -65,18 +65,24 @@ const useStyles = makeStyles((theme) => ({
         // width: "24%",
         // padding: "5px",
         padding:"0 ",
+        borderRadius: "12px",
         boxShadow:" 0 0 20px 0px rgb(0 0 0 / 10%)",
         transform:"scale(0.90)",
         transition:"all 0.4s ease-in-out",
         "&:hover ": {
-            // "& > img": {
-            transform:"scale(0.95)"
-            // }
+            
+            transform:"scale(0.95)",
+            
+        },
+        "& > img": {
+
         }
     },
     boxImg: {
         "& > img": {
-            width: '100%'
+            width: '100%',
+            borderRadius: "12px",
+
         }
     },
     itemTitle: {
@@ -175,7 +181,6 @@ const Dress = () => {
                                                     <div className={classes.itemPrice}>
                                                         {item.price}
                                                     </div>
-                                                    <div className={classes.itemDetail}> Xem chi tiết</div>
                                             </div>
                                         </Link>
                                     </Grid>
