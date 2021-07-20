@@ -9,6 +9,9 @@ import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
+    content: {
+        padding: "60px 0"
+    },
     sectionTitle: {
         backgroundImage:"url(\"https://pdp.edu.vn/wp-content/uploads/2021/06/hinh-anh-bau-troi-dep-sac-net-nhat.jpg\")",
         padding:"50px 0",
@@ -19,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
         margin: "20px 0"
     },
     section: {
-        padding:"20px 0",
         fontSize: "24px",
         textTransform: "uppercase",
         textAlign: "center",
@@ -157,7 +159,7 @@ const Dress = () => {
         <>
             <Header/>
             <div className={classes.content}>
-                <div className={classes.section}>Váy cưới Luxury </div>
+                <div className={classes.section}>Váy cưới </div>
                 <div className={classes.contentItem}>
                 <Grid containe className={classes.wrapItem}>
                         {

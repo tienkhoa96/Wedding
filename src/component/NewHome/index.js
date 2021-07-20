@@ -37,9 +37,10 @@ const useStyles = makeStyles((theme) => ({
             cursor: "pointer"
         },
         "&:hover .changeBtn": {
-            background:"#ffa4a4",
-            color:"#2b2b2b",
-            border:"1px solid #ffa4a4"
+            background:"#f6cacad4",
+            color:"#ffffff",
+            border:"1px solid #f6cacad4",
+            opacity: "1"
         }
     },
     card: {
@@ -51,11 +52,11 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor:"#fff",
         backgroundClip:"border-box",
         border:"1px solid rgba(0,0,0,.125)",
-        borderRadius:".25rem",
+        borderRadius:"6px",
         "& > img": {
             width:"100%",
-            borderTopLeftRadius:"calc(.25rem - 1px)",
-            borderTopRightRadius:"calc(.25rem - 1px)" 
+            borderTopLeftRadius:"6px",
+            borderTopRightRadius:"6px" 
         },
     },
     cardBody: {
@@ -79,9 +80,9 @@ const useStyles = makeStyles((theme) => ({
         border:"1px solid #000000",
         fontSize:"14px",
         padding: "7px 15px",
-        borderRadius: "3px",
-        display: "inline-block"
-        
+        borderRadius: "16px",
+        display: "inline-block",
+        opacity: "0.4"
     }
   }));
 
@@ -98,14 +99,14 @@ const NewHome = () => {
             
         },
         {
-            img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/new/thiet-ke-thiep-cuoi.jpg?raw=true',
+            img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Studio/chup-anh-cuoi-phong-cach-han-quoc-2.jpg?raw=true',
             title: "Xu hướng tổ chức tiệc cưới năm 2021",
             subtitle: 'Đám cưới là ngày trọng đại, bất cứ cặp đôi nào cũng mong muốn những điều khác biệt...',
             link: "/new-detail/thiet-ke-thiep-cuoi"
             
         },
         {
-            img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/Home/new/tuoi-binh-ty-1996-hop-voi-tuoi-nao.jpg?raw=true',
+            img: 'https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/06.jpg?raw=true',
             title: "Top 6 ứng dụng thiết kế thiệp cưới 2021",
             link: "/new-detail/ki-truoc-online-bung-no-uu-dai",
             subtitle: 'Thiệp cưới từ lâu đã trở thành vật không thể thiếu trong mỗi đám cưới. Bởi tấm thiệp cưới là...',

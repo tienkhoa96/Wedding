@@ -15,12 +15,11 @@ const useStyles = makeStyles((theme) => ({
         // justifyContent: "flex-start",
         alignItems: "center",
         flexWrap: "wrap",
-        marginBottom: "50px",
+        padding: "40px 0 60px 0",
         width: "90vw",
         margin: '0 auto'
     },
     section: {
-        padding:"20px 0",
         fontSize: "24px",
         textTransform: "uppercase",
         textAlign: "center",
@@ -38,9 +37,9 @@ const useStyles = makeStyles((theme) => ({
         },
         "&:hover .opacity": {
             "& > img": {
-                transform: "scale(1.3)",
-                opacity: "0.6",
-                transition: "all 2s ease-in-out",
+                // transform: "scale(1.3)",
+                opacity: "0.7",
+                transition: "all 0.5s ease-in-out",
 
             }
         }
@@ -103,8 +102,9 @@ const MenuAlbum = ({dataList}) => {
     }
 
 
-    return ( <><div className={classes.section}>Album ảnh cưới</div>
+    return ( <>
                 <Grid container spacing={3} className={classes.wrapMenuDetail}>
+                <Grid item xs={12} className={classes.section}>Album ảnh cưới</Grid>
                     {
                         renderMenuAlbum()
                     }

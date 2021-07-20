@@ -6,7 +6,9 @@ import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
+    
     headerTitle: {
+        
         border:"1px solid #f2e0b1",
         display:"inline-block",
         fontSize:"30px",
@@ -34,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
         "@media (max-width: 600px)": {
             padding:"5px 50px",
         }
+    },
+    firstChild: {
+            marginTop:"100px",
     },
     boxHeader: {
         textAlign: "center"
@@ -72,8 +77,8 @@ const useStyles = makeStyles((theme) => ({
     contentBox: {
         border:"1px solid #00000024",
         // borderRadius:"20px",
-        borderTopRightRadius:"20px",
-        borderTopLeftRadius:"20px",
+        borderTopRightRadius:"12px",
+        borderTopLeftRadius:"12px",
         textAlign: "center",
         background: "#fff",
         // border: "unset",
@@ -90,20 +95,26 @@ const useStyles = makeStyles((theme) => ({
     description: {
         fontSize:"18px",
         fontWeight:"bold",
-        padding:"0 15px",
-        height: "30px"
+        padding:"10px 0 ",
     },
     price: {
         fontWeight:"bold",
         fontSize:"18px",
         color:"#ea3038",
-        padding:"0 15px"
+        padding:"0 0 15px 0"
     },
     label: {
         margin:"0",
-        padding:"10px 0",
+        padding:"12px 0",
         position:"relative",
         borderTop:"1px solid #f0f0f0"
+    },
+    labelGift: {
+        margin:"0",
+        padding:"12px 0",
+        position:"relative",
+        borderTop:"1px solid #9a7b7b"
+        
     },
     subContent: {
         "& > li": {
@@ -135,18 +146,28 @@ const useStyles = makeStyles((theme) => ({
             listStyle: "none"
         },
         margin: "0",
-        background: "rgb(242 151 144 / 82%)",
+        background: "#fedcd9d1",
         padding: "0 15px",
-        borderBottomRightRadius:"20px",
-        borderBottomLeftRadius:"20px",
+        borderBottomRightRadius:"12px",
+        borderBottomLeftRadius:"12px",
         color: "rgb(29 29 29)"
     }, 
     giftName: {
-        padding: "10px 0"
+        padding: "12px 0"
     },
     textGift: {
         marginLeft: "10px",
-        fontSize: "30px"
+        fontSize: "30px",
+        
+    },
+    imgGift: {
+        display: "inline-block",
+        // width: "40px",
+        // height: "40px",
+        "& > .fa-gift": {
+            fontSize: "25px"
+            
+        }
     },
     group:  {
         background: "url(https://ely.com.vn/wp-content/themes/flatsome/resources/images/bg-pean.png)",
@@ -176,7 +197,7 @@ const ShowProductPrice = ({dataList}) => {
             {
                 list.map((item, index) => {
                     return <>
-                            <li className={classes.label}>{item.label}</li>
+                            <li className={classes.labelGift}>{item.label}</li>
                             </>
                 })
             }
@@ -217,7 +238,7 @@ const ShowProductPrice = ({dataList}) => {
                                         {
                                             item.gift && item.gift.length && <ul className={clsx(classes.subGift)}>
                                                 <div className={classes.giftName}>
-                                                    <span className={classes.imgGift}><img src="https://ely.com.vn/wp-content/themes/flatsome/resources/images/gif.png"/></span>
+                                                    <div className={classes.imgGift}><i class="fas fa-gift"></i></div>
                                                     <span className={classes.textGift}>Quà tặng</span>
                                                 </div>
                                             {
@@ -242,7 +263,7 @@ const ShowProductPrice = ({dataList}) => {
                         return (<Grid container className={ `${index % 2 === 1 ? classes.group : ""}`}>
                                     <Grid item xs={12} className={classes.groupDaisy}>
                                         <div className={classes.boxHeader}>
-                                            <div className={classes.headerTitle}>{item.header}</div>
+                                            <div className={clsx(classes.headerTitle, `${index === 0 ? classes.firstChild : ""}`)}>{item.header}</div>
                                         </div>
                                         <Grid container item className={classes.container}>
                                             {

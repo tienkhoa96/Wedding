@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
         position:"relative",
         display:"inline-block",
         paddingBottom:"5px",
+        marginBottom: "18px",
         "&:after": {
             content:"\"\"",
             width:"40px",
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     },
     boxItem: {
         padding: "0",
+        margin: "0",
         '& > li':{
             listStyle: "none",
         }
@@ -55,7 +57,7 @@ const Wedding = () => {
     const Wedding = [
         {
             icon: "fas fa-map-marker-alt",
-            title: "Địa chỉ: Số 48 Tố Hữu, Trung Văn, Từ Liêm, Hà Nội"
+            title: "Địa chỉ: Số 48 Tố Hữu, Từ Liêm, Hà Nội"
         },
         {
             icon: "fas fa-phone-alt",
@@ -71,7 +73,7 @@ const Wedding = () => {
         },
         {
             icon: "far fa-clock",
-            title: "Giờ mở cửa: 8h30 đến 21h30 từ thứ 2 đến Chủ nhật"
+            title: "Giờ mở cửa: 8h30 đến 21h30"
         },
         
     ]

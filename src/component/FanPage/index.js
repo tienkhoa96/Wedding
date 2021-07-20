@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
         position:"relative",
         display:"inline-block",
         paddingBottom:"5px",
+        marginBottom: "18px",
         "&:after": {
             content:"\"\"",
             width:"40px",

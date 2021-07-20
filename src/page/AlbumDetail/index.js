@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     flexWrap: "wrap",
     marginBottom: "50px",
+    padding: "40px 0 60px 0",
     width: "90vw",
     margin: "0 auto",
     "@media (min-width: 1200px)":{
@@ -29,7 +30,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title : {
-      textAlign: 'center'
+      textAlign: 'center',
+      fontSize: "24px",
+      textTransform: "uppercase",
+      textAlign: "center",
+      fontWeight: "bold",
+      margin: "20px 0 "
   }
 }));
 
@@ -51,9 +57,6 @@ const AlbumDetail = () => {
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/01.jpg?raw=true",
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/02.jpg?raw=true",
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/03.jpg?raw=true",
-        "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/04.jpg?raw=true",
-        "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/05.jpg?raw=true",
-        "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/06.jpg?raw=true",
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/07.jpg?raw=true",
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/08.jpg?raw=true",
         "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Ba%20v%C3%AC/09.jpg?raw=true",
@@ -197,8 +200,9 @@ const AlbumDetail = () => {
             if (item.cat === myId) {
               return (
                   <>
-                    <h1 className={classes.title}>Album chụp ảnh cưới {item.title}</h1>
                     <Grid container className={classes.wrapAlbumDetail}>
+                    <Grid item xs={12} className={classes.title}>Album chụp ảnh cưới {item.title}</Grid>
+
                     {
                         item.dataImg.map((img, index) => {
                             return(

@@ -44,7 +44,7 @@ const Header = ({activeMenu}) => {
             
         },
         {
-            label: 'Váy cưới LUXURY',
+            label: 'Váy cưới',
             link: '/vay-cuoi'
             
         },

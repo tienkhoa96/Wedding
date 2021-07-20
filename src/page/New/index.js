@@ -10,7 +10,7 @@ import clsx from  'clsx';
 
 const useStyles = makeStyles((theme) => ({
   content: {
-    marginTop: "20px"
+    padding: "60px 0"
   },  
   wrapNew: {
     // "@media (min-width: 600px": {
@@ -24,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
       width: "90vw",
       margin: '0 auto'
     }
+  },
+  section: {
+    fontSize: "24px",
+    textTransform: "uppercase",
+    textAlign: "center",
+    fontWeight: "bold",
+    marginBottom:"30px",
   },
   inner: {
     margin: "0 auto",
@@ -41,11 +48,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center"
   },
   boxImg: {
-    paddingBottom: "10px",
-    "@media (min-width: 768px)": {
-      width: "40%",
-      padding: "10px 20px 10px 50px",
-    },
+    paddingRight: "20px",
+    // "@media (min-width: 768px)": {
+    //   width: "40%",
+    //   padding: "10px 20px 10px 50px",
+    // },
     "& > img": {
       width: "100%"
     }
@@ -65,16 +72,19 @@ const useStyles = makeStyles((theme) => ({
     // justifyContent: "center"
   },
   boxSubImg: {
-    width: "40%",
+    paddingRight: "5px",
     "& > img": {
       width: "95%",
       height: "80%"
     }
   },
   newTitle: {
-    padding: "5px 10px",
-    background: "gray",
-    marginBottom: "10px"
+    padding: "15px 15px",
+    background: "#f26a19",
+    marginBottom: "10px",
+    color: "#ffffff",
+    textTransform: "uppercase", 
+    fontWeight: "bold"
   },
   des: {
     fontWeight: "bold",
@@ -103,19 +113,19 @@ export default function New() {
     },
     {
       id: "chup-hinh-cuoi-chuan-bi-gi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/chup-hinh-cuoi-chuan-bi-gi.jpg?raw=true",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Studio/chup-anh-cuoi-phong-cach-han-quoc-2.jpg?raw=true",
       des: "Chụp hình cưới cần chuẩn bị gì",
       title: "ELLY STUDIO thông báo ưu đãi dành riêng cho khách hàng đăng kí online trước [...]"
     },
     {
       id: "ngay-tot-to-chuc-dam-cuoi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/ngay-tot-to-chuc-dam-cuoi.jpg?raw=true",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/vector-con-trau-20215f69c6d645996_22ebded96e18f5171f1862107b7caf24.jpg?raw=true",
       des: "Ngày tốt tổ chức đám cưới",
       title: "ELLY STUDIO thông báo ưu đãi dành riêng cho khách hàng đăng kí online trước [...]"
     },
     {
       id: "thiet-ke-thiep-cuoi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiet-ke-thiep-cuoi.jpg?raw=true",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiepcuoi.jpg?raw=true",
       des: "Thiết kế thiếp cưới",
       title: "ELLY STUDIO thông báo ưu đãi dành riêng cho khách hàng đăng kí online trước [...]"
     },
@@ -129,12 +139,12 @@ export default function New() {
     },
     {
       id: "/ngay-tot-to-chuc-dam-cuoi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/ngay-tot-to-chuc-dam-cuoi.jpg?raw=true",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/vector-con-trau-20215f69c6d645996_22ebded96e18f5171f1862107b7caf24.jpg?raw=true",
       des: "Ngày tốt tổ chức cưới hỏi",
     },
     {
-      id: "/thiet-ke-thiep-cuoi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiet-ke-thiep-cuoi.jpg?raw=true",
+      id: "/thiet-ke-thiep-cuoi",      
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/thiepcuoi.jpg?raw=true",
       des: "Thiết kế thiệp cưới",
     },
     {
@@ -144,7 +154,7 @@ export default function New() {
     },
     {
       id: "/chup-hinh-cuoi-chuan-bi-gi",
-      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/New/chup-hinh-cuoi-chuan-bi-gi.jpg?raw=true",
+      img: "https://github.com/tienkhoa96/tienkhoa96.github.io/blob/master/Figma/Img/wedding/Studio/chup-anh-cuoi-phong-cach-han-quoc-2.jpg?raw=true",
       des: "Chụp hình cưới cần chuẩn bị gì",
     },
   ]
@@ -157,17 +167,17 @@ export default function New() {
                 return (
                     <Grid item xs={12} className={classes.inner}>
                       <Link to={`/new-detail/${item.id}`}>
-                        <div className={classes.flexItem}>
-                          <div className={classes.boxImg}>
+                        <Grid container item xs={12} className={classes.flexItem}>
+                          <Grid item xs={12} sm={4} className={classes.boxImg}>
                             <img src={item.img}/>
-                          </div>
-                          <div className={clsx(classes.boxTitle, "changeTitle")}>
+                          </Grid>
+                          <Grid item xs={12} sm={8} className={clsx(classes.boxTitle, "changeTitle")}>
                             <div className={classes.titleInner}>
                               <div className={classes.des}>{item.des}</div>
                               <div className={classes.title}>{item.title}</div>
                             </div>  
-                          </div>   
-                        </div>                         
+                          </Grid>   
+                        </Grid>                         
                       </Link>
                     </Grid>
                 )
@@ -183,17 +193,18 @@ export default function New() {
               SubItem.length && SubItem.map((item, index) => {
                 return (<>
                     <Grid item xs={12} className={classes.subInner}>
+                      
                       <Link to={`/new-detail/${item.id}`}>
-                        <div className={classes.flexSubItem}>
-                          <div className={classes.boxSubImg}>
+                        <Grid container item xs={12} className={classes.flexSubItem}>
+                          <Grid item xs={4} className={classes.boxSubImg}>
                             <img src={item.img}/>
-                          </div>
-                          <div className={clsx(classes.boxSubTitle, "changeSubTitle")}>
+                          </Grid>
+                          <Grid item xs={8} className={clsx(classes.boxSubTitle, "changeSubTitle")}>
                             <div className={classes.subTitleInner}>
                               <div className={classes.des}>{item.des}</div>
                             </div>  
-                          </div>   
-                        </div>                         
+                          </Grid>   
+                        </Grid>                         
                       </Link>
                     </Grid>
                     </>
@@ -207,6 +218,7 @@ export default function New() {
   return (<>
     <Header />
     <div className={classes.content}>
+    <div className={classes.section}>Tin tức </div>
       <Grid container className={classes.wrapNew}>
         <Grid container item xs={12} sm={8} className={classes.boxItem}>
           

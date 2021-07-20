@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
         position:"relative",
         display:"inline-block",
         paddingBottom:"5px",
+        marginBottom: "18px",
         "&:after": {
             content:"\"\"",
             width:"40px",
@@ -41,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
         "& > a > i": {
             position: "absolute",
             left: "0",
-            color: "#80808040",
+            color: "#d29365",
             paddingTop: "2px"
         },
         "&:hover > a": {
