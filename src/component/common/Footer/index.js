@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
         // textAlign:"center",
         paddingTop:"30px",
         position:"relative",
-        borderTop: "2px solid #d29365"
+        borderTop: "2px solid #d29365",
+
         // "&:before":{
         //     content:"\"\"",
         //     height:"2px",
@@ -29,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         width: "80vw",
         margin:"0 auto",
         justifyContent:"space-between",
+        marginBottom: "30px"
         // alignItems: "center"
     }
   }));
